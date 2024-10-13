@@ -14,6 +14,6 @@ class DeleteUser(BaseEndpoint):
         with allure.step('Удаление пользователя'):
             headers = {'Content-Type': 'application/json',
                        'Authorization': 'Bearer {}'.format(token)}
-            self.response = requests.delete(f"{Constants.BASE_URL}{Constants.DELETE_USER_URL}", headers=headers)
+            self.response = requests.delete(f"{Constants.BASE_URL}{Constants.USER_URL}", headers=headers)
             self.status = self.response.status_code
             self.response_json = self.response.json()

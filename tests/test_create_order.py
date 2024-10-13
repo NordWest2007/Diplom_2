@@ -11,10 +11,13 @@ class TestCreateUser:
         create = CreateUser()
         create.create_user(DataUser.PAYLOAD_FOR_USER)
         create.response_is(200)
+        assert create.response_json["user"]["email"] == DataUser.PAYLOAD_FOR_USER["email"]
+        assert create.response_json["user"]["name"] == DataUser.PAYLOAD_FOR_USER["name"]
 
         del_user = DeleteUser()
         del_user.delete(create.token)
         del_user.response_is(202)
+        del_user.response_json_is({'success': True, 'message': 'User successfully removed'})
 
     def test_create_double(self, create_user):
         payload = create_user[1]

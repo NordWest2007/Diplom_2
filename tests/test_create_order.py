@@ -1,0 +1,31 @@
+import pytest
+
+from data.data_user import DataUser
+from endpoints.create_user import CreateUser
+from endpoints.delete_user import DeleteUser
+
+
+class TestCreateUser:
+
+    def test_create_user(self):
+        create = CreateUser()
+        create.create_user(DataUser.PAYLOAD_FOR_USER)
+        create.response_is(200)
+
+        del_user = DeleteUser()
+        del_user.delete(create.token)
+        del_user.response_is(202)
+
+    def test_create_double(self, create_user):
+        payload = create_user[1]
+        create = CreateUser()
+        create.create_user(payload)
+        create.response_is(403)
+        create.response_json_is(DataUser.JSON_ALREADY_EXIST)
+
+    @pytest.mark.parametrize('payload', DataUser.DATA_PAYLOAD)
+    def test_create_user_with_bad_payload(self, payload):
+        create = CreateUser()
+        create.create_user(payload)
+        create.response_is(403)
+        create.response_json_is(DataUser.JSON_NOT_FOUND_FIELD)

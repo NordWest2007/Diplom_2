@@ -5,3 +5,4 @@ class Constants:
     LOGIN_URL = 'auth/login'
     TOKEN_URL = 'auth/token'
     ORDER_URL = 'orders'
+    INGREDIENT_URL = 'ingredients'

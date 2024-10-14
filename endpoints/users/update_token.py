@@ -11,7 +11,7 @@ class UpdateToken(BaseEndpoint):
     token = None
     refreshToken = None
 
-    def create_user(self, payload) -> None:
+    def update_user(self, payload) -> None:
         with allure.step('Обновление токена. Отправка запроса'):
             self.response = requests.post(f'{Constants.BASE_URL}{Constants.TOKEN_URL}', data=payload)
             self.status = self.response.status_code

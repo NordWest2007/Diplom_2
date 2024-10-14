@@ -1,34 +1,39 @@
 import pytest
+from faker import Faker
 
-from data.data_user import DataUser
-from endpoints.create_user import CreateUser
-from endpoints.delete_user import DeleteUser
+from endpoints.orders.create_order import CreateOrder
+from endpoints.orders.get_ingredients import GetIngredients
 
 
-class TestCreateUser:
+class TestCreateOrder:
 
-    def test_create_user(self):
-        create = CreateUser()
-        create.create_user(DataUser.PAYLOAD_FOR_USER)
+    @staticmethod
+    @pytest.fixture(scope="function")
+    def authorization(request, authorization_user):
+        if request.param == 'Auth':
+            return authorization_user
+        else:
+            return ''
+
+    @pytest.mark.parametrize('authorization', ['None', 'Auth'], indirect=True)
+    def test_create_order(self, create_burger, authorization):
+        create = CreateOrder()
+        create.create_order(token=authorization, ingredients=create_burger)
+        print(authorization)
+        print(create.response_json)
         create.response_is(200)
-        assert create.response_json["user"]["email"] == DataUser.PAYLOAD_FOR_USER["email"]
-        assert create.response_json["user"]["name"] == DataUser.PAYLOAD_FOR_USER["name"]
+        create.response_is_success(True)
 
-        del_user = DeleteUser()
-        del_user.delete(create.token)
-        del_user.response_is(202)
-        del_user.response_json_is({'success': True, 'message': 'User successfully removed'})
+    @pytest.mark.parametrize('authorization', ['None', 'Auth'], indirect=True)
+    def test_create_order_without_ingredients(self, create_burger, authorization):
+        create = CreateOrder()
+        create.create_order(token=authorization, ingredients=create_burger)
+        create.response_is(400)
+        create.response_is_success(False)
 
-    def test_create_double(self, create_user):
-        payload = create_user[1]
-        create = CreateUser()
-        create.create_user(payload)
-        create.response_is(403)
-        create.response_json_is(DataUser.JSON_ALREADY_EXIST)
+    def test_create_order_with_bad_hash(self, create_burger, authorization_user):
+        create = CreateOrder()
+        fake=Faker('ru_RU')
+        create.create_order(token=authorization_user, ingredients=[fake.uuid4()])
+        create.response_is(500)
 
-    @pytest.mark.parametrize('payload', DataUser.DATA_PAYLOAD)
-    def test_create_user_with_bad_payload(self, payload):
-        create = CreateUser()
-        create.create_user(payload)
-        create.response_is(403)
-        create.response_json_is(DataUser.JSON_NOT_FOUND_FIELD)

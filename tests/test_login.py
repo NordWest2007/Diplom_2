@@ -1,9 +1,9 @@
 import pytest
 
 from data.data_user import DataUser
-from endpoints.create_user import CreateUser
-from endpoints.delete_user import DeleteUser
-from endpoints.login import Login
+from endpoints.users.create_user import CreateUser
+from endpoints.users.delete_user import DeleteUser
+from endpoints.users.login import Login
 from data.data_login import DataLogin
 
 

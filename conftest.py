@@ -3,6 +3,7 @@ import random
 import pytest
 
 from data.data_user import DataUser
+from endpoints.orders.create_order import CreateOrder
 from endpoints.orders.get_ingredients import GetIngredients
 from endpoints.users.create_user import CreateUser
 from endpoints.users.delete_user import DeleteUser
@@ -55,3 +56,9 @@ def authorization_user():
 
     del_user = DeleteUser()
     del_user.delete(login.token)
+
+
+@pytest.fixture()
+def create_order(create_burger, authorization_user):
+    create = CreateOrder()
+    create.create_order(token=authorization_user, ingredients=create_burger)

@@ -19,8 +19,6 @@ class TestCreateOrder:
     def test_create_order(self, create_burger, authorization):
         create = CreateOrder()
         create.create_order(token=authorization, ingredients=create_burger)
-        print(authorization)
-        print(create.response_json)
         create.response_is(200)
         create.response_is_success(True)
 

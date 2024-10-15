@@ -10,10 +10,6 @@ class BaseEndpoint:
         with allure.step(f'Ожидаемый ответ {code}, фактический {self.status}'):
             assert self.status == code
 
-    def response_json_is(self, response):
-        with allure.step(f'Ожидаемый json {response}, фактический {self.response_json}'):
-            assert self.response_json == response
-
-    def response_is_success(self, response):
-        with allure.step(f'Ожидаемый ответ True, фактический {response}'):
-            assert self.response_json['success'] == response
+    def response_json_is(self, key, response):
+        with allure.step(f'Ожидаемый ответ {self.response_json[key]}, фактический {response}'):
+            assert self.response_json[key] == response

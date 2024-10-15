@@ -8,12 +8,4 @@ class DataUpdateUser:
                     {"password": fake.password()}
                     )
 
-    JSON_UPDATE_USER = {
-        "success": True,
-        "user": {
-            "email": {},
-            "name": {}
-        }
-    }
-
-    JSON_BAD_UPDATE_USER ={  "success": False, "message": "You should be authorised"}
+    JSON_BAD_UPDATE_USER = "You should be authorised"

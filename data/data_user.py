@@ -17,5 +17,7 @@ class DataUser:
                         "password": fake.password(),
                         "name": fake.name()
                         }
-    JSON_ALREADY_EXIST = {'success': False, 'message': 'User already exists'}
-    JSON_NOT_FOUND_FIELD = {'success': False, 'message': 'Email, password and name are required fields'}
+    JSON_ALREADY_EXIST = 'User already exists'
+    JSON_NOT_FOUND_FIELD = 'Email, password and name are required fields'
+
+

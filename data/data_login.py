@@ -9,4 +9,4 @@ class DataLogin:
                      "password": fake.password()}
                     )
 
-    JSON_PAYLOAD_INCORRECT = {"success": False, "message": "email or password are incorrect"}
+    JSON_PAYLOAD_INCORRECT = "email or password are incorrect"

@@ -1,23 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="62598771-2ac9-4804-8628-b02769ce47a5" name="Changes" comment="" />
+    <list default="true" id="6d6ab785-0de5-495d-b9f4-3f57a7b38be1" name="Changes" comment="уточнение аллюр отчета" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
-  <component name="ProjectId" id="2nnCoYW3T4JnTQp7B3iyVJN7rJb" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nLYrwjbyvq2uQQyL4fhCF4QPFm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order_w1ith_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order_with_auth.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order_with_bad_hash.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order_without_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateUser.test_create_double.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateUser.test_create_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.TestCreateUser.test_create_user_with_bad_payload.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_order.test_create_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_user.TestCreateUser.test_create_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_create_user.TestCreateUser.test_create_user_with_bad_payload.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_get_orders.TestGetOrders.test_get_order_with_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_get_orders.TestGetOrders.test_get_order_without_auth.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.TestLogin.test_login_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.TestLogin.test_login_user_with_bad_payload.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_update_user.TestUpdateUser.test_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_update_user.TestUpdateUser.test_update_without_token.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/yandex/Diplom_2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\yandex\Diplom_2\endpoints" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\yandex\Diplom_2\endpoints\orders" />
+      <recent name="C:\Users\Admin\yandex\Diplom_2\endpoints\users" />
+      <recent name="C:\Users\Admin\yandex\Diplom_2\tests" />
+      <recent name="C:\Users\Admin\yandex\Diplom_2" />
+      <recent name="C:\Users\Admin\yandex\Diplom_2\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_update_user.TestUpdateUser.test_update_without_token">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Diplom_2" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_create_user.TestCreateUser.test_create_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_create_user.TestCreateUser.test_create_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_create_user.TestCreateUser.test_create_user_with_bad_payload" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_create_user.TestCreateUser.test_create_user_with_bad_payload&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_get_orders.TestGetOrders.test_get_order_with_auth" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_get_orders.TestGetOrders.test_get_order_with_auth&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_login.TestLogin.test_login_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.TestLogin.test_login_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_update_user.TestUpdateUser.test_update_without_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_update_user.TestUpdateUser.test_update_without_token&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="Diplom_2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_2)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Diplom_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_update_user.TestUpdateUser.test_update_without_token" />
+        <item itemvalue="Python tests.Python tests for test_get_orders.TestGetOrders.test_get_order_with_auth" />
+        <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_user" />
+        <item itemvalue="Python tests.Python tests for test_create_user.TestCreateUser.test_create_user_with_bad_payload" />
+        <item itemvalue="Python tests.Python tests for test_login.TestLogin.test_login_user" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -29,12 +224,92 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62598771-2ac9-4804-8628-b02769ce47a5" name="Changes" comment="" />
-      <created>1729599628663</created>
+      <changelist id="6d6ab785-0de5-495d-b9f4-3f57a7b38be1" name="Changes" comment="" />
+      <created>1728754026524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729599628663</updated>
+      <updated>1728754026524</updated>
     </task>
+    <task id="LOCAL-00001" summary="Шаблоны эндпоинтов, тесты на user, фикстура для создания пользователя">
+      <option name="closed" value="true" />
+      <created>1728816590112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728816590112</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавлены тесты на login">
+      <option name="closed" value="true" />
+      <created>1728823208306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728823208306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Добавлены тесты на создание заказа">
+      <option name="closed" value="true" />
+      <created>1728919859740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728919859740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавлены тесты на  получение заказов">
+      <option name="closed" value="true" />
+      <created>1728920695140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728920695140</updated>
+    </task>
+    <task id="LOCAL-00005" summary="аллюр отчет">
+      <option name="closed" value="true" />
+      <created>1728991076516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728991076517</updated>
+    </task>
+    <task id="LOCAL-00006" summary="уточнение аллюр отчета">
+      <option name="closed" value="true" />
+      <created>1729535853273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729535853273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Шаблоны эндпоинтов, тесты на user, фикстура для создания пользователя" />
+    <MESSAGE value="Добавлены тесты на login" />
+    <MESSAGE value="Добавлены тесты на создание заказа" />
+    <MESSAGE value="Добавлены тесты на  получение заказов" />
+    <MESSAGE value="аллюр отчет" />
+    <MESSAGE value="уточнение аллюр отчета" />
+    <option name="LAST_COMMIT_MESSAGE" value="уточнение аллюр отчета" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="login.token" language="Python" />
+        <watch expression="create_user[0]" language="Python" />
+        <watch expression="key" language="Python" />
+        <watch expression="value" language="Python" />
+        <watch expression="payload" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

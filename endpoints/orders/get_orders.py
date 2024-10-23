@@ -6,7 +6,6 @@ from data.constants import Constants
 
 
 class GetOrders(BaseEndpoint):
-    response = None
     status = None
     response_json = None
 
@@ -15,6 +14,6 @@ class GetOrders(BaseEndpoint):
             headers = ''
             if token is not None:
                 headers = {'Authorization': 'Bearer {}'.format(token)}
-            self.response = requests.get(f"{Constants.BASE_URL}{Constants.ORDER_URL}", headers=headers)
-            self.status = self.response.status_code
-            self.response_json = self.response.json()
+            response = requests.get(f"{Constants.BASE_URL}{Constants.ORDER_URL}", headers=headers)
+            self.status = response.status_code
+            self.response_json = response.json()

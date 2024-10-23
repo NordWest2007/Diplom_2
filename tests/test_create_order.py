@@ -9,14 +9,6 @@ from endpoints.orders.create_order import CreateOrder
 @allure.suite('Создание заказа')
 class TestCreateOrder:
 
-    @staticmethod
-    @pytest.fixture(scope="function")
-    def authorization(request, authorization_user):
-        if request.param == 'Auth':
-            return authorization_user
-        else:
-            return ''
-
     @allure.sub_suite('Позитивные данные')
     @allure.story('Позитивные данные')
     @allure.title('С ингредиентами(с авторизацией и без)')

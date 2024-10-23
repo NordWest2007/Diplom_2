@@ -49,19 +49,12 @@ def create_burger():
 
 
 @pytest.fixture()
-def authorization_user():
-    with allure.step('Регистрация пользователя'):
-        create = CreateUser()
-        create.create_user(DataUser.PAYLOAD_FOR_USER)
+def authorization_user(create_user):
     with allure.step('Авторизация пользователя'):
         login = Login()
         login.login_user(DataUser.PAYLOAD_FOR_USER)
         login.response_is(200)
     yield login.token
-
-    with allure.step('Удаление регистрации пользователя'):
-        del_user = DeleteUser()
-        del_user.delete(login.token)
 
 
 @pytest.fixture()
@@ -69,3 +62,11 @@ def create_order(create_burger, authorization_user):
     with allure.step('Создание заказа'):
         create = CreateOrder()
         create.create_order(token=authorization_user, ingredients=create_burger)
+
+
+@pytest.fixture(scope="function")
+def authorization(request, authorization_user):
+    if request.param == 'Auth':
+        return authorization_user
+    else:
+        return ''

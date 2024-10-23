@@ -15,7 +15,7 @@ class CreateOrder(BaseEndpoint):
             if token is not None:
                 headers = {'Authorization': 'Bearer {}'.format(token)}
             payload = {"ingredients": ingredients}
-            self.response = requests.post(f'{Constants.BASE_URL}{Constants.ORDER_URL}', data=payload, headers=headers)
-            self.status = self.response.status_code
-            if self.response.status_code!=500:
-                self.response_json = self.response.json()
+            response = requests.post(f'{Constants.BASE_URL}{Constants.ORDER_URL}', data=payload, headers=headers)
+            self.status = response.status_code
+            if response.status_code!=500:
+                self.response_json = response.json()
